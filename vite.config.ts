@@ -10,8 +10,12 @@ import { fileURLToPath, URL } from "node:url";
 export default defineConfig({
   plugins: [
     tanstackStart({
-      // Point SSR entry to our custom server wrapper for error handling.
-      server: { entry: "src/server.ts" },
+      // Point SSR entry to our custom server wrapper for error handling,
+      // and configure Nitro for Vercel Serverless deployment.
+      server: { 
+        preset: "vercel",
+        entry: "src/server.ts" 
+      },
     }),
     tailwindcss(),
   ],
