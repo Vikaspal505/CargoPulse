@@ -46,7 +46,7 @@ Start the development server:
 bun run dev
 ```
 
-Navigate to `http://localhost:5173` to view the application.
+Navigate to `` to view the application.
 
 ## 🏗️ Architecture
 
